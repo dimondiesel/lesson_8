@@ -1,0 +1,336 @@
+@font-face{
+	font-family: 'Lato';
+	src: url("../fonts/Lato-Regular.woff2") format("woff2"),url("../fonts/Lato-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Lato';
+	src: url("../fonts/Lato-Bold.woff2") format("woff2"),url("../fonts/Lato-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Lato';
+	src: url("../fonts/Lato-Black.woff2") format("woff2"),url("../fonts/Lato-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+[class*="__conteiner"]{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+[class*="title"]{
+	color: #1E212C
+}
+
+body{
+	font-family: 'Lato', san-serif;
+	line-height: 160%;
+	color: #424551
+}
+
+.page__conteiner *{
+	max-width: 600px;
+}
+.page__title {
+	font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;   
+	margin: 0px 0px 40px 0px;
+}
+.page__text {
+	line-height: 160%;
+	margin: 0px 0px 48px 0px;
+}
+.page__sub-title {
+	font-weight: 700;
+   font-size: 28px;
+   line-height: 150%;
+	margin: 0px 0px 24px 0px;
+}
+.page__text ul{
+	margin: 0px 0px 184px 0px;
+}
+.page__text li{
+	margin: 0px 0px 4px 0px;
+	padding: 0px 0px 0px 32px;
+	background: url('../img/icons/check.png') 0 4px no-repeat;
+}
+.page__title-uppercase {
+	font-weight: 700;   
+   line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 0px 0px 8px 0px;
+}
+.page__text .page__title{
+	margin: 0px 0px 16px 0px;
+}
+.sub-text{
+	font-weight: 400;
+   font-size: 20px;
+   line-height: 150%;
+	color: #787A80;
+	margin: 0px 0px 32px 0px;
+}
+.list ul{
+	margin: 0px 0px 32px 0px;
+}
+.list  li{
+	padding: 0px 0px 0px 24px;
+	font-weight: 700;
+	margin: 0px 0px 4px 0px;
+
+
+}
+.list  li:nth-child(1){
+	background: url('../img/icons/Star.png') 0 3px no-repeat;
+}
+.list  li:nth-child(2){
+	background: url('../img/icons/Play.png') 0 3px no-repeat;
+}
+.list  li:nth-child(1){
+	background: url('../img/icons/Profile.png') 0 3px no-repeat;
+}
+
+/*-----------Домашка-----------------------*/
+.homework__title{
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 20px;
+}
+ul ul{
+	display: none;
+}	
+.homework__conteiner li{
+	padding: 3px 0px 0px 15px;	
+}
+.homework__conteiner{
+	font-size: 0;
+	margin-bottom: 100px;
+}
+.homework__conteiner>div{
+	display: inline-block;
+	width: 20%;
+	border: solid 2px black;
+	font-size: 16px;	
+}
+.homework__sub-title{
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: solid 2px black;
+	padding: 10px 0px 10px 0px;
+}
+.homework__hover .link:hover{
+	color: red;
+	text-transform: uppercase;
+}
+.homework__hover li:hover ul{
+	display: block;
+}
+.homework__visited .link:visited{
+	color: red;
+	text-decoration: underline;
+}
+.homework__active .link:active{
+	color: rgb(60, 0, 255);
+	text-decoration: underline;
+	text-transform: uppercase;
+	background-color: red;
+}
+.homework__active li:first-child{
+	color: coral;
+}
+.homework__focus .link:focus{
+	outline: 1px solid red;	
+}	
+.homework__focus li:last-child{
+	text-transform: uppercase;
+}
+.homework__target .block:target{
+	display: block;
+	color: green;
+}		
+.homework__class div{
+	vertical-align: top;
+}
+.homework__conteiner div:last-of-type{
+	color: blue;
+}
+
+.homework__element h2::before{
+	content: '<';
+	color: red;;
+}
+.homework__element h2::after{
+	content: '>';
+	color: rgb(17, 0, 255);;
+}
+.homework__before  li::before{
+	background: url('../img/icons/check.svg') 0 0 no-repeat;
+	content: "";	
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.homework__before  li:hover::before{
+	transition: all 0.8s ease 0s;
+	transform: rotate(-360deg);
+}
+.homework__sub-before li::before{
+	background: url('../img/icons/check.svg') 0 0 no-repeat;
+	content: "";	
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 5px;
+}	
+.homework__sub-before  li:hover:before{
+	transition: all 0.8s ease 0s;
+	transform: scale(1.5);
+}
+.homework__number ol{
+	counter-reset: item;
+}
+.homework__number li::before{
+	counter-increment: item;
+	content: counter(item)")";
+	font-weight: 700;
+}
+.homework__game{
+	height: 5000px;
+	
+}
+.game__begin{
+	font-size: 40px;
+	background-color: rgb(135, 222, 190);
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 5;	
+}
+.game__get{	
+	background-color: red;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;	
+}
+.game__ready {
+	background-color:yellow;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;		
+}
+.game__start {
+	background-color: green;	
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;		
+	color: orange;
+}
+.game__text{
+	opacity: 0;
+}
+.game__last>.game__text{
+	opacity: 1;
+}
+.game__one {	
+	height: 100px;
+	width: 800px;	
+	background-color: aqua;
+	margin: -150px 0px 0px 190px;
+}
+.game__two {
+	height: 500px;
+	width: 60px;	
+	background-color: rgb(0, 255, 51);
+	margin: -100px 0 0 auto;
+}
+.game__three {
+	height: 40px;
+	width: 1000px;	
+	background-color: rgb(21, 0, 255);
+	margin: 300px 0 0 -940px;
+}
+.game__four {
+	height: 400px;
+	width: 60px;	
+	background-color: rgb(255, 0, 60);
+   margin: -600px 0px -70px 0px;
+}
+.game__five {
+	height: 30px;
+	width: 500px;	
+	background-color: rgb(12, 2, 5);
+   margin: -200px 0px 0px -500px;
+}
+.game__six {
+	height: 650px;
+	width: 20px;	
+	background-color: rgb(224, 244, 11);
+   margin: -850px 0px 0px 0px;
+}
+.game__last{
+	background: red;	
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;		
+	margin: -400px 0px 0px -90px;
+	opacity: 1;
+	color: #1E212C;
+}
+.game__finish {
+	display: block;
+	height: 1500px;
+	width: 1500px;
+	border-radius: 50%;	
+	background: url(../img/5.jpg) 50%/100% no-repeat;
+	margin: -200px 0px 0px 00px;
+	}
+
+.game__begin div{
+	display: none;
+}
+.game__begin:hover .game__get{
+	display: block;
+}
+.game__get:hover .game__ready{
+	display: block;
+}
+.game__ready:hover .game__start{
+	display: block;
+}
+.game__start:hover .game__one{
+	display: block;
+}
+.game__one:hover .game__two{
+	display: block;
+}
+.game__two:hover .game__three{
+	display: block;
+}
+.game__three:hover .game__four{
+	display: block;
+}
+.game__four:hover .game__five{
+	display: block;
+}
+.game__five:hover .game__six{
+	display: block;
+}
+.game__six:hover .game__last{
+	display: block;
+}
+.game__last:hover .game__finish{
+	display: block;
+}
